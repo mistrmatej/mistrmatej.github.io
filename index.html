@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITLE}}</title>
+    <meta name="description" content="{{DESCRIPTION}}">
+    <meta name="theme-color" content="#000000">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700;800&family=Open+Sans:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/js/all.min.js"></script>
+    <link rel="icon" href="/favicon.png">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Přeskočit na obsah</a>
+
+<!-- NAV -->
+<nav id="topbar" role="navigation" aria-label="Hlavní navigace">
+    <div class="nav-inner">
+        <a href="/" class="nav-logo">
+            <img src="/logo.png" alt="{{TITLE}}" height="32" style="width:auto">
+        </a>
+        <div class="nav-links" id="topbar-nav">
+            <a href="#features" class="active">Features</a>
+            <a href="#about">O projektu</a>
+            <a href="#gallery">Galerie</a>
+        </div>
+        <div class="nav-actions">
+            <a href="#" class="nav-btn" title="Akce" aria-label="Akce">
+                <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M8 13V3M4 9L8 13L12 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <button class="nav-toggle" id="menu-toggle" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- MAIN -->
+<main id="main-content" class="main" tabindex="-1">
+    <div class="content">
+
+        <!-- HERO -->
+        <section class="hero" aria-labelledby="hero-title">
+            <img src="/logo.png" alt="{{TITLE}}" class="hero-logo">
+            <h1 id="hero-title">{{TITLE}}</h1>
+            <p>{{SUBTITLE}}</p>
+            <div class="hero-actions">
+                <a href="#" class="btn-primary">Primární akce</a>
+                <a href="#about" class="btn-ghost">Více info</a>
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="section reveal" id="features" aria-labelledby="features-title">
+            <div class="section-header">
+                <span class="section-num" aria-hidden="true">01</span>
+                <h2 id="features-title" class="section-title">Features</h2>
+            </div>
+            <div class="features-grid entrance-stagger">
+                <div class="feature-card card">
+                    <div class="feature-icon"><i class="fas fa-star"></i></div>
+                    <h3>Feature 1</h3>
+                    <p>Popis feature.</p>
+                </div>
+                <div class="feature-card card">
+                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Feature 2</h3>
+                    <p>Popis feature.</p>
+                </div>
+                <div class="feature-card card">
+                    <div class="feature-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Feature 3</h3>
+                    <p>Popis feature.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section reveal" id="about" aria-labelledby="about-title">
+            <div class="section-header">
+                <span class="section-num" aria-hidden="true">02</span>
+                <h2 id="about-title" class="section-title">O projektu</h2>
+            </div>
+            <div class="about-card card">
+                <p class="about-text">Zde je prostor pro popis projektu, serveru, modpacku nebo čehokoliv jiného.</p>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section class="section reveal" id="gallery" aria-labelledby="gallery-title">
+            <div class="section-header">
+                <span class="section-num" aria-hidden="true">03</span>
+                <h2 id="gallery-title" class="section-title">Galerie</h2>
+            </div>
+            <div class="gallery-grid entrance-stagger">
+                <div class="gallery-item card">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="gallery-caption">Obrázek 1</div>
+                </div>
+                <div class="gallery-item card">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="gallery-caption">Obrázek 2</div>
+                </div>
+                <div class="gallery-item card">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="gallery-caption">Obrázek 3</div>
+                </div>
+                <div class="gallery-item card">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="gallery-caption">Obrázek 4</div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-grid">
+            <div class="footer-col footer-logo-col">
+                <img src="/logo.png" alt="{{TITLE}}" class="footer-logo-img">
+            </div>
+            <div class="footer-col">
+                <h4>Navigace</h4>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">O projektu</a></li>
+                    <li><a href="#gallery">Galerie</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Odkazy</h4>
+                <ul>
+                    <li><a href="#">Externí odkaz</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 <strong>{{TITLE}}</strong></span>
+            <span>Vytvořil <a href="https://malbert.vercel.app" target="_blank" rel="noopener">Matěj Albert</a></span>
+        </div>
+    </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="back-to-top" aria-label="Zpět nahoru">
+    <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 13V3M4 7L8 3L12 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<!-- TOAST -->
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="/script.js"></script>
+</body>
+</html>
