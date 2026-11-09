@@ -6,140 +6,152 @@
     <title>Matěj Albert</title>
     <style>
         :root {
-            color-scheme: dark;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            background: #10131a;
-            color: #f3f4f6;
+            color: #202124;
+            background: #f7f5f0;
+            font-family: Georgia, "Times New Roman", serif;
         }
 
         body {
             margin: 0;
-            background: radial-gradient(circle at top, #26334b, #10131a 55%);
         }
 
         main {
-            box-sizing: border-box;
-            max-width: 980px;
+            width: min(680px, calc(100% - 40px));
             margin: 0 auto;
-            padding: 72px 24px;
+            padding: 96px 0 72px;
         }
 
         h1 {
-            margin-bottom: 12px;
-            font-size: clamp(2.2rem, 6vw, 4rem);
+            margin: 0;
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            font-weight: 400;
+            letter-spacing: -0.06em;
         }
 
         .intro {
-            max-width: 620px;
-            color: #c4cad6;
+            margin: 18px 0 88px;
+            color: #65625d;
             font-size: 1.15rem;
         }
 
         h2 {
-            margin-top: 56px;
-        }
-
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 16px;
-            padding: 0;
-            list-style: none;
+            margin: 0 0 8px;
+            font-size: 1rem;
+            font-weight: 400;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
         }
 
         .project {
             display: flex;
-            flex-direction: column;
-            min-height: 150px;
-            padding: 22px;
-            border: 1px solid #354057;
-            border-radius: 14px;
-            background: rgb(25 31 43 / 85%);
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 24px;
+            padding: 20px 0;
+            border-top: 1px solid #d5d0c7;
+        }
+
+        .project:last-child {
+            border-bottom: 1px solid #d5d0c7;
         }
 
         .project h3 {
-            margin: 0 0 8px;
+            margin: 0 0 5px;
+            font-size: 1.3rem;
+            font-weight: 400;
         }
 
         .project p {
-            flex: 1;
-            margin: 0 0 18px;
-            color: #c4cad6;
-        }
-
-        a {
-            color: #8fc7ff;
+            margin: 0;
+            color: #65625d;
         }
 
         .links {
             display: flex;
-            flex-wrap: wrap;
-            gap: 14px;
+            flex-shrink: 0;
+            gap: 16px;
         }
 
-        .website {
-            font-weight: 700;
+        a {
+            color: #202124;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 4px;
+        }
+
+        a:hover {
+            color: #8c3d2e;
         }
 
         footer {
             margin-top: 56px;
-            color: #9da7b8;
+            color: #65625d;
+        }
+
+        @media (max-width: 560px) {
+            main {
+                padding-top: 56px;
+            }
+
+            .intro {
+                margin-bottom: 56px;
+            }
+
+            .project {
+                display: block;
+            }
+
+            .links {
+                margin-top: 12px;
+            }
         }
     </style>
 </head>
 <body>
     <main>
         <h1>Matěj Albert</h1>
-        <p class="intro">Tady najdete moje projekty, webové stránky a další práci z GitHubu.</p>
+        <p class="intro">Weby, projekty a další věci, na kterých pracuju.</p>
 
-        <h2>Projekty a stránky</h2>
-        <ul class="projects">
-            <li class="project">
-                <h3>Arduino semafor</h3>
-                <p>Projekt semaforu postaveného na Arduinu.</p>
+        <section aria-labelledby="projects-title">
+            <h2 id="projects-title">Projekty</h2>
+            <div class="project">
+                <div>
+                    <h3>Radio Com</h3>
+                    <p>Webový projekt.</p>
+                </div>
                 <div class="links">
-                    <a class="website" href="https://mistrmatej.github.io/arduino-semafor/">Otevřít stránku</a>
+                    <a href="https://mistrmatej.github.io/radiocom/">Web</a>
+                </div>
+            </div>
+            <div class="project">
+                <div>
+                    <h3>Arduino semafor</h3>
+                    <p>Projekt semaforu postaveného na Arduinu.</p>
+                </div>
+                <div class="links">
+                    <a href="https://mistrmatej.github.io/arduino-semafor/">Web</a>
                     <a href="https://github.com/mistrmatej/arduino-semafor">GitHub</a>
                 </div>
-            </li>
-            <li class="project">
-                <h3>MC Insane</h3>
-                <p>Webové stránky pro soukromý Minecraft server TAKTOEINSANE.</p>
+            </div>
+            <div class="project">
+                <div>
+                    <h3>MC Insane</h3>
+                    <p>Web pro soukromý Minecraft server TAKTOEINSANE.</p>
+                </div>
                 <div class="links">
-                    <a class="website" href="https://mcinsane.vercel.app">Otevřít stránku</a>
+                    <a href="https://mcinsane.vercel.app">Web</a>
                     <a href="https://github.com/mistrmatej/mcinsane">GitHub</a>
                 </div>
-            </li>
-            <li class="project">
-                <h3>Unidock</h3>
-                <p>Webový projekt pro práci s Dockerem.</p>
-                <div class="links">
-                    <a class="website" href="https://unidock-kappa.vercel.app">Otevřít stránku</a>
-                    <a href="https://github.com/mistrmatej/unidock">GitHub</a>
+            </div>
+            <div class="project">
+                <div>
+                    <h3>ClockOnConnect</h3>
+                    <p>Plugin pro OctoPrint se živými hodinami.</p>
                 </div>
-            </li>
-            <li class="project">
-                <h3>Termínovka</h3>
-                <p>Aplikace Termínovka pro 1.B SSPŠ.</p>
-                <div class="links">
-                    <a href="https://github.com/mistrmatej/Terminovka">GitHub</a>
-                </div>
-            </li>
-            <li class="project">
-                <h3>ClockOnConnect</h3>
-                <p>OctoPrint plugin s živými hodinami na displeji tiskárny.</p>
                 <div class="links">
                     <a href="https://github.com/mistrmatej/OctoPrint-ClockOnConnect">GitHub</a>
                 </div>
-            </li>
-            <li class="project">
-                <h3>Další projekty</h3>
-                <p>Zdrojové kódy a experimenty na mém GitHubu.</p>
-                <div class="links">
-                    <a class="website" href="https://github.com/mistrmatej?tab=repositories">Všechny repozitáře</a>
-                </div>
-            </li>
-        </ul>
+            </div>
+        </section>
 
         <footer>
             <a href="https://github.com/mistrmatej">GitHub profil</a>
